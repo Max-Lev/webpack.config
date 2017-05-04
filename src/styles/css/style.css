@@ -1,0 +1,9 @@
+
+main {
+    border: 1px solid;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5%;
+    box-sizing: border-box;
+}
