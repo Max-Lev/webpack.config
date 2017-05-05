@@ -1,6 +1,7 @@
 main {
     min-height: 300px;
-    text-align: center;
-    background-image: url('./../../images/batman.png');
+    text-align: center; // background-image: url('./../../images/batman.png');
+    background-image: url('./../../images/pic3@3x.jpg');
     background-size: contain;
+    background-repeat: no-repeat;
 }

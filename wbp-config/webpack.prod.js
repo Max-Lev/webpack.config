@@ -5,7 +5,7 @@ var commonConfig = require('./webpack.common.js');
 var path = require('path');
 const ENV = process.env.NODE_ENV = process.env.ENV = 'production';
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-//const UglifyJSPlugin = require('uglify-js');
+var amz = 'https://s3.amazonaws.com/z-live-base/platform/public/search/';
 
 console.log('webpack-prod-config');
 
@@ -17,11 +17,19 @@ module.exports = webpackMerge(commonConfig, {
   output: {
     path: path.resolve('dist'),
     //publicPath: 'http://localhost:8080/dist',
-    publicPath:'', //!!! prod important
+    publicPath: '', //!!! prod important !!!
     filename: '[name].js',
     chunkFilename: '[id].chunk.js'
   },
+  resolve: {
+    // resolve file extensions
+    extensions: ['.jsx', '.es6', '.js', '.html', '.ts', '.css', '.scss', '.less']
+  },
+  module: {
+    rules: [
 
+    ]
+  },
   plugins: [
     new webpack.NoEmitOnErrorsPlugin(),
     // new ExtractTextPlugin('[name].[hash].css'),
@@ -44,7 +52,7 @@ module.exports = webpackMerge(commonConfig, {
       //mangle: false
       mangle: {
         // Skip mangling these
-       // except: ['$super', '$', 'exports', 'require']
+        // except: ['$super', '$', 'exports', 'require']
       }
     })
   ]
