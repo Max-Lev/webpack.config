@@ -1,11 +1,2 @@
-
-main {
-    border: 1px solid;
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-    padding: 5%;
-    box-sizing: border-box;
-}main {
-  background-color: lightblue;
-}
+main{border:1px solid;display:block;width:90%;margin:0 auto;padding:5%;box-sizing:border-box}main{background-color:#add8e6}main{min-height:300px;text-align:center;background-image:url(assets/batman.3673ff28597078516577daa699742750.png);background-size:contain}
+/*# sourceMappingURL=styles.css.map*/
