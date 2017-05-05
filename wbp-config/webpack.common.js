@@ -83,7 +83,8 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
         //loader: 'file-loader?name=assets/[name].[ext]'
         //load image assets from external source
-         loader: 'file-loader?name=[name].[ext]&publicPath=' + amz,
+        //&outpath
+        loaders: ['file-loader?name=assets/[name].[ext]&publicPath=' + amz]
       },
 
     ]
