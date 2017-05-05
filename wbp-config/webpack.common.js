@@ -3,7 +3,7 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var excludeNodeModules = path.resolve('node_modules');
-
+var amz = 'https://s3.amazonaws.com/z-live-base/platform/public/search/';
 console.log('webpack.common.js');
 
 module.exports = {
@@ -81,7 +81,9 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
-        loader: 'file-loader?name=assets/[name].[hash].[ext]',
+        //loader: 'file-loader?name=assets/[name].[ext]'
+        //load image assets from external source
+         loader: 'file-loader?name=[name].[ext]&publicPath=' + amz,
       },
 
     ]
