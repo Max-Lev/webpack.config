@@ -1,2 +1,0 @@
-webpackJsonp([0],[,function(n,e,o){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var t=function(){function n(n){console.log("product name:",n),this.name=n}return n}();e.Product=t},function(n,e){},function(n,e){},function(n,e){},function(n,e,o){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var t=o(2),c=(o.n(t),o(3)),u=(o.n(c),o(4)),r=(o.n(u),o(0)),i=(o.n(r),o(1));o.n(i);new i.Product("jeans");(0,r.Vendor)("vendor manager"),console.log("main.js init")}],[5]);
-//# sourceMappingURL=main.js.map
